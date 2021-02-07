@@ -1,0 +1,21 @@
+<!--Inicia Table content-->
+<table class="table">
+    <thead>
+        <tr class="table-info">
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let shoes of shoes">
+            <th>{{shoes.nombre}}</th>
+            <td>{{shoes.descripcion}}</td>
+            <td>{{shoes.genero}}</td>
+            <td>{{shoes.modelo}}</td>
+            <td>{{shoes.stock}}</td>
+        </tr>
+    </tbody>
+</table>
