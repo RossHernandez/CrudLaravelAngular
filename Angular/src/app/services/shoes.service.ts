@@ -15,4 +15,8 @@ export class ShoesService {
     const headers = new HttpHeaders({'Content-Type':'aplication/json'});
     return this.httpClient.post(this.API_ENDPOINT + '/shoes', shoes, {headers:headers});
   }
+  put(shoes){
+    const headers = new HttpHeaders({'Content-Type':'aplication/json'});
+    return this.httpClient.put(this.API_ENDPOINT + '/shoes/' + shoes.id, shoes, {headers:headers});
+  }
 }
