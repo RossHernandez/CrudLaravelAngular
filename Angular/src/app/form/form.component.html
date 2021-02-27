@@ -1,25 +1,43 @@
 <!--Inicia Form-->
-<h2>Guarda un nuevo producto</h2>
-<div class="mb-3">
-    <label for="nombre" class="form-label">Nombre</label>
-    <input [(ngModel)]='shoes.nombre' type="text" class="form-control" id="nombre" placeholder="Ingrese nombre">
-</div>
-<div class="mb-3">
-    <label for="descripcion" class="form-label">Descripcion</label>
-    <input [(ngModel)]='shoes.descripcion' type="text" class="form-control" id="descripcion" placeholder="Ingrese descripción">
-</div>
-<div class="mb-3">
-    <label for="genero" class="form-label">Genero</label>
-    <input [(ngModel)]='shoes.genero' type="text" class="form-control" id="genero" placeholder="Ingrese género">
-</div>
-<div class="mb-3">
-    <label for="modelo" class="form-label">Modelo</label>
-    <input [(ngModel)]='shoes.modelo' type="number" class="form-control" id="modelo" placeholder="Ingrese modelo">
-</div>
-<div class="mb-3">
-    <label for="stock" class="form-label">Stock</label>
-    <input [(ngModel)]='shoes.stock' type="number" class="form-control" id="stock" placeholder="Ingrese stock">
-</div>
-<div class="mb-3">
-    <button class="btn btn-outline-primary" (click)="guardarProd()">Guardar</button>
+<div class="container">
+    <h2>Guarda un nuevo producto</h2>
+    <div class="row">
+        <div class="col">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input [(ngModel)]='shoes.nombre' type="text" class="form-control" id="nombre" placeholder="Ingrese nombre">
+        </div>
+
+        <div class="col">
+            <label for="descripcion" class="form-label">Descripcion</label>
+            <input [(ngModel)]='shoes.descripcion' type="text" class="form-control" id="descripcion" placeholder="Ingrese descripción">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <label for="genero" class="form-label">Genero</label>
+            <input [(ngModel)]='shoes.genero' type="text" class="form-control" id="genero" placeholder="Ingrese género">
+        </div>
+        <div class="col">
+            <label for="precio" class="form-label">Precio</label>
+            <input [(ngModel)]='shoes.precio' type="text" class="form-control" id="precio" placeholder="Ingrese precio">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <label for="modelo" class="form-label">Modelo</label>
+            <input [(ngModel)]='shoes.modelo' type="number" class="form-control" id="modelo" placeholder="Ingrese modelo">
+        </div>
+        <div class="col">
+            <label for="stock" class="form-label">Stock</label>
+            <input [(ngModel)]='shoes.stock' type="number" class="form-control" id="stock" placeholder="Ingrese stock">
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-end">
+        <div class="col-0">
+            <button class="btn btn-outline-primary" (click)="guardarProd()">Guardar</button>
+        </div>
+    </div>
 </div>
